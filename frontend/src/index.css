@@ -1,0 +1,103 @@
+:root {
+  color-scheme: light;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f5f6f8;
+  color: #1f2937;
+}
+
+.dashboard {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.dashboard h1 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.dashboard .subtitle {
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.tile {
+  background: white;
+  border-radius: 10px;
+  padding: 16px 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.tile .label {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 6px;
+}
+
+.tile .value {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.panel {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  margin-bottom: 24px;
+}
+
+.panel h2 {
+  font-size: 15px;
+  margin: 0 0 16px 0;
+}
+
+.systems-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.systems-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f1f3;
+  font-size: 14px;
+}
+
+.status-badge {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.status-badge.synced {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-badge.delayed {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.error-banner {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
